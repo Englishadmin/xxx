@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Webpage</title>
+</head>
+<body>
+    <ul id="nav">
+        {% for foo in nav %}
+            <li><a href="{{ foo.href }}">{{ foo.caption }}</a></li>
+        {% endfor %}
+    </ul>
+    {{ a_variable }}
+    {{ user.name }}
+    {{ user['name'] }}
+    { # a comment # }
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+<form action="",method="post">
+    <table>
+        <tbody>
+            <tr>
+                <td>{{ form.username.label }}</td>
+                <td>{{ form.username(class='username') }}</td>
+            </tr>
+            <tr>
+                <td>{{ form.password.label }}</td>
+                <td>{{ form.password() }}</td>
+            </tr>
+            <tr>
+                <td>{{ form.password_repeat.label }}</td>
+                <td>{{ form.password_repeat }}</td>
+            </tr>
+            <tr>
+                <td>{{ form.submit.label }}</td>
+                <td>{{ form.submit() }}</td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>

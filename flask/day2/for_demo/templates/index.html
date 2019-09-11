@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for_Demo</title>
+</head>
+<body>
+    <ul>
+        {% for user in users %}
+            <li>{{ user }}</li>
+            {% else %}
+            <li>查无此值</li>
+        {% endfor %}
+
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>游戏名</th>
+                <th>岁月</th>
+                <th>境界</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                {% for key,value in person.items() %}
+                    <td>{{ value }}</td>
+                {% endfor %}
+                
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>序号</th>
+                <th>书名</th>
+                <th>作者</th>
+                <th>价格</th>
+                <th>总数</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in books %}
+                {% if loop.first %}
+                    <tr style="background: red"></tr>
+                {% elif loop.last %}
+                    <tr style="background: blue"></tr>
+                {% else %}
+                <tr>
+                {% endif %}
+                    <td>{{ loop.index }}</td>
+                    <td>{{ book.name }}</td>
+                    <td>{{ book.author }}</td>
+                    <td>{{ book.price }}</td>
+                    <td>{{ loop.length }}</td>
+                </tr>
+            {% endfor %}
+            
+        </tbody>
+    </table>
+
+
+</body>
+</html>

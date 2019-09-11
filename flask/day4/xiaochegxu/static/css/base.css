@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.phone{
+    width: 375px;
+    height: 667px;
+    background: pink;
+}
+.phone .search-group{
+    padding: 14px 8px;
+    background: #41be57;
+}
+.search-group .search-input{
+    display: block;
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}

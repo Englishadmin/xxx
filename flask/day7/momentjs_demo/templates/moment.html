@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>时间格式化</title>
+</head>
+<body>
+<div>
+    <div>{{ publice_time }}</div>
+    <div>{{ moment(publice_time).format('LLLL') }}</div>
+    <div>{{ moment(publice_time).format('LLL') }}</div>
+    <div>{{ moment(publice_time).format('LL') }}</div>
+    <div>{{ moment(publice_time).format('L') }}</div>
+    <div>{{ moment(publice_time).format('YY-MM-DD HH:mm:ss') }}</div>
+</div>
+
+
+
+{{ moment.include_jquery() }}
+{{ moment.include_moment() }}
+{{ moment.locale('zh-CN') }}
+</body>
+</html>

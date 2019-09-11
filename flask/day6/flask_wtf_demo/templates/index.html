@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+</head>
+<body>
+
+<form action="" method="post">
+    {{ form.hidden_tag() }}
+    {{ form.name.label }}{{ form.name(id="username",class="username",placeholder="请输入用户名:") }}
+{{ form.submit }}
+</form>
+输入的内容为: {% if name %}
+    {{ name }}
+{% endif %}
+</body>pip
+</html>
